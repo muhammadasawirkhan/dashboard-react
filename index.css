@@ -1,0 +1,38 @@
+/* *{
+    border: 1px solid black;
+} */
+
+.background-image-container {
+  position: absolute;
+  z-index: -1;
+  top: 140px;
+  left: 450px;
+  
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .background-image-container {
+    top: 185px;
+  }
+}
+
+@media screen and (max-width:1180px) and (min-width: 1024px) {
+  .background-image-container {
+    top: 175px;
+    left: 120px;
+    width: 805px;
+    height: 583px;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+ 
+@import "tailwindcss";
